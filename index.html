@@ -44,7 +44,41 @@
 .container-status .loc span {
     font-size: 15px;
 }
-</style></head>
+</style>
+<style>
+@media screen and (max-width: 768px) {
+  .container-cta .cta {
+    margin-bottom: 12px;
+  }
+  .container-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+  }
+  .cta.user-link.button-bouncing {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+.container-cta .cta {
+  margin-bottom: 16px;
+}
+
+.cta.user-link.button-bouncing {
+  font-size: 18px;
+  padding: 18px 24px;
+  border-radius: 12px;
+}
+
+.cta.user-link.button-bouncing:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+</style>
+
+</head>
 <body class="light">
 <main class="gradient_dark" data-link-id="019610a2-596a-73d1-8fb8-6d27a28b48de" data-template="legacy">
 <input name="_csrf_token" type="hidden" value="c62c330cb7c92b0f8c1f71c4.F8np6KEwOCaNid82g7jXbgUGsvpnyOUZ7dN0NULmJFs.XoGgt5N1X27Z5qkDtsmhA2lpgpg-jYZ_nuo9bDqPc258kJOxzHwIf8DesA"/>
@@ -104,11 +138,6 @@
 <span class="cta-subtext">Últimas vagas hoje</span>
 </div>
 </a></div>
-<div class="container-countdown">
-<span class="promotion">Sua vaga amor tá aqui… mas se acabar o tempo, vai pra outro</span>
-<div class="content">
-<div class="container-time">
-<div class="number">00</div>
 <span>HRS</span>
 </div>
 <div class="sep">
